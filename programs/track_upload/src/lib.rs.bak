@@ -112,27 +112,3 @@ impl TrackEvent {
     }
 }
 
-#[error_code]
-pub enum TrackError {
-    #[msg("Only the original signer can update tracks.")]
-    UnauthorizedUser,
-    #[msg("Track should be up to 32 characters")]
-    TrackTooLong,
-    #[msg("Artist should be up to 32 characters")]
-    ArtistTooLong,
-    #[msg("CID is not valid")]
-    InvalidCID,
-}
-
-#[error_code]
-pub enum StackError {
-    #[msg("Only the original signer can update tracks.")]
-    UnauthorizedUser,
-    #[msg("Track should be up to 32 characters")]
-    TrackTooLong,
-    #[msg("Artist should be up to 32 characters")]
-    ArtistTooLong,
-    #[msg("CID is not valid")]
-    InvalidCID,
-}
-
